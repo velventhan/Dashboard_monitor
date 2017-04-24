@@ -6,10 +6,10 @@ body {
 /* Common */
 
 .button {
-    background: #ef382a;
-    border-bottom: 2px solid #b7170b;
-    color: #fff;
-    padding: 10px 30px 6px 30px;
+    background: #F2C873;
+    /* border-bottom: 2px solid #b7170b; */
+    color: #333;
+    padding: 6px 30px 6px 30px;
     font-size: 16px;
     font-weight: bold;
     display: inline-block;
@@ -20,9 +20,9 @@ body {
 }
 
 .button:hover {
+    background: #e0bb6a;
     text-decoration: none;
-    background: #b7170b;
-    color: #fff;
+    color: #333;
 }
 
 img {
@@ -30,9 +30,34 @@ img {
     height: auto;
 }
 
+.icon_section_col img {
+    width: 139px;
+    height: 124px;
+}
+
 .navbar-default {
     background-color: rgba(48, 48, 248, 1);
     border-color: #f1eeec;
+}
+
+.chevron-down {
+  fill: #000;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  left: 50%;
+  margin-left: -25px;
+  display: block;
+}
+
+@keyframes animated-bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0)}
+    40% {transform: translateY(-30px)}
+    60% {transform: translateY(-15px)}
+}
+
+.animated-bounce {
+    animation: animated-bounce 2s infinite ease;
 }
 
 
@@ -172,6 +197,10 @@ img {
 .footer_nav a:hover {
     text-decoration: none;
     opacity: 0.8;
+}
+
+.header_bar_logo img {
+    margin-top: 20px;
 }
 
 @media all and (max-width: 1199px) and (min-width: 1025px) {
